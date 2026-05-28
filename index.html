@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AimToGro — Coming Soon · Courtright Collective</title>
+  <meta name="description" content="AimToGro is on the way. A new product from Courtright Collective. Coming soon.">
+  <meta name="keywords" content="AimToGro, Courtright Collective, coming soon, Nashville">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://aimtogro.courtrightco.com">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Courtright Collective">
+  <meta property="og:title" content="AimToGro — Coming Soon">
+  <meta property="og:description" content="A new product from Courtright Collective. Coming soon.">
+  <meta property="og:url" content="https://aimtogro.courtrightco.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"AimToGro","url":"https://aimtogro.courtrightco.com","publisher":{"@type":"Organization","name":"Courtright Collective","url":"https://courtrightco.com"}}
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --midnight:  #0E1520;
+      --ash:       #1A2030;
+      --copper:    #C45C28;
+      --copper-lt: #D97040;
+      --gold:      #D9A030;
+      --gold-lt:   #F0B840;
+      --parchment: #F4EBD9;
+      --cream:     #FAF6EF;
+
+      --display: 'Cormorant Garamond', Georgia, serif;
+      --body:    'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    html, body { height: 100%; }
+    body {
+      font-family: var(--body);
+      background: var(--midnight);
+      color: var(--parchment);
+      margin: 0;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(196, 92, 40, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+      animation: glow 8s ease-in-out infinite alternate;
+    }
+    body::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 20% 80%, rgba(217, 160, 48, 0.10) 0%, transparent 70%);
+      pointer-events: none;
+      animation: glow 11s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes glow {
+      0% { transform: scale(1) translateX(0); opacity: 0.7; }
+      100% { transform: scale(1.1) translateX(40px); opacity: 1; }
+    }
+    .wrap {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      max-width: 640px;
+      width: 100%;
+    }
+    .eyebrow {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin: 0 0 1.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease-out 0.1s forwards;
+    }
+    h1 {
+      font-family: var(--display);
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.25rem;
+      color: var(--parchment);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out 0.25s forwards;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--gold);
+      font-weight: 400;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 0.95rem;
+      border: 1px solid rgba(244, 235, 217, 0.25);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out 0.4s forwards;
+    }
+    .badge .dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: var(--gold);
+      border-radius: 999px;
+      margin-right: 0.55rem;
+      vertical-align: middle;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    .lede {
+      font-size: 1.15rem;
+      color: rgba(244, 235, 217, 0.75);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.65;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out 0.55s forwards;
+    }
+    .home-link {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out 0.7s forwards;
+    }
+    .home-link a {
+      color: rgba(244, 235, 217, 0.65);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid rgba(244, 235, 217, 0.2);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .home-link a:hover {
+      color: var(--copper-lt);
+      border-color: var(--copper-lt);
+    }
+    .signature {
+      position: absolute;
+      bottom: 1.75rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: var(--display);
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      color: rgba(244, 235, 217, 0.4);
+      font-weight: 300;
+      z-index: 1;
+    }
+    .signature span { color: var(--copper); font-weight: 400; }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<main class="wrap">
+  <div class="eyebrow">Courtright Collective · Nashville</div>
+  <span class="badge"><span class="dot"></span>Coming Soon</span>
+  <h1>Aim<em>To</em>Gro</h1>
+  <p class="lede">Something new is in the works. Check back soon.</p>
+  <p class="home-link"><a href="https://courtrightco.com">← courtrightco.com</a></p>
+</main>
+
+<div class="signature">Courtright <span>Collective</span></div>
+
+</body>
+</html>
